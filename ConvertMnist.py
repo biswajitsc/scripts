@@ -25,7 +25,7 @@ def convert(imgf, labelf, outf, n):
         images.append(image)
 
     images = np.asarray(images)
-    labels = np.asarray(images)
+    labels = np.asarray(labels)
 
     pickle.dump((images, labels), o)
 
