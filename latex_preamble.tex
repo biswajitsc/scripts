@@ -1,0 +1,55 @@
+\documentclass[a4paper, 12pt]{report}
+
+%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm, algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{xcolor}
+\usepackage{todonotes}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage[a4paper, total={6in,9in}]{geometry}
+\usepackage{afterpage}
+
+\usepackage[style=alphabetic, backend=bibtex]{biblatex}
+\bibliography{ref}
+
+%%%%%%%%%%%%%%%%%% Custom Operators %%%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\softmax}{softmax}
+\DeclareMathOperator{\ReLU}{ReLU}
+\DeclareMathOperator{\vis}{vis}
+\DeclareMathOperator{\VL}{VL}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\mean}{mean}
+
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\pd}[2]{\frac{\partial}{\partial #2} #1}
+\newcommand{\otoprule}{\midrule[\heavyrulewidth]}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
+
+\renewcommand{\baselinestretch}{1.2}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% Main Document %%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\afterpage{\blankpage}
+
+\end{document}
